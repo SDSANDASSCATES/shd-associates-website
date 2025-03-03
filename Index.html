@@ -11,7 +11,12 @@
         nav a { margin: 10px; text-decoration: none; color: #2c3e50; font-weight: bold; }
         .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; background: white; }
         footer { text-align: center; padding: 10px; background: #2c3e50; color: white; margin-top: 20px; }
-        .btn { display: inline-block; padding: 10px 20px; background: #2980b9; color: white; text-decoration: none; margin-top: 10px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #2980b9; color: white; text-decoration: none; margin-top: 10px; border-radius: 5px; }
+        .services { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .service-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px; text-align: center; }
+        .service-box h3 { color: #2c3e50; }
+        .service-box p { color: #555; }
+        .service-box .price { font-size: 20px; font-weight: bold; color: #27ae60; }
     </style>
 </head>
 <body>
@@ -26,13 +31,26 @@
     </nav>
     <div class="container" id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li><strong>GST Return Filing</strong> – Hassle-free GST compliance for businesses.</li>
-            <li><strong>Income Tax Return Filing</strong> – Expert assistance for individuals & businesses.</li>
-            <li><strong>Accounting & Bookkeeping</strong> – Maintain accurate financial records.</li>
-            <li><strong>TDS & Payroll Processing</strong> – Ensure compliance with tax deductions.</li>
-        </ul>
-        <a href="#contact" class="btn">Get a Free Consultation</a>
+        <div class="services">
+            <div class="service-box">
+                <h3>Individual Income Tax Return</h3>
+                <p>Accurate and hassle-free income tax filing for individuals.</p>
+                <p class="price">₹1000</p>
+                <a href="#buy" class="btn">Buy Now</a>
+            </div>
+            <div class="service-box">
+                <h3>GST Return Filing</h3>
+                <p>Seamless GST compliance and filing for businesses.</p>
+                <p class="price">₹1000</p>
+                <a href="#buy" class="btn">Buy Now</a>
+            </div>
+            <div class="service-box">
+                <h3>Accounting Services</h3>
+                <p>Professional bookkeeping and accounting solutions.</p>
+                <p class="price">₹5000</p>
+                <a href="#buy" class="btn">Buy Now</a>
+            </div>
+        </div>
     </div>
     <div class="container" id="about">
         <h2>About Us</h2>
