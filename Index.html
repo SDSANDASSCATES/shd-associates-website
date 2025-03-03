@@ -17,6 +17,10 @@
         .service-box h3 { color: #2c3e50; }
         .service-box p { color: #555; }
         .service-box .price { font-size: 20px; font-weight: bold; color: #27ae60; }
+        form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px; margin: auto; }
+        input, select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        .images { text-align: center; margin-top: 20px; }
+        .images img { width: 300px; border-radius: 10px; margin: 10px; }
     </style>
 </head>
 <body>
@@ -26,6 +30,7 @@
     </header>
     <nav>
         <a href="#services">Services</a>
+        <a href="#buy">Buy Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -34,23 +39,41 @@
         <div class="services">
             <div class="service-box">
                 <h3>Individual Income Tax Return</h3>
+                <img src="tax.jpg" alt="Tax Services" width="100%">
                 <p>Accurate and hassle-free income tax filing for individuals.</p>
                 <p class="price">₹1000</p>
-                <a href="#buy" class="btn">Buy Now</a>
             </div>
             <div class="service-box">
                 <h3>GST Return Filing</h3>
+                <img src="gst.jpg" alt="GST Services" width="100%">
                 <p>Seamless GST compliance and filing for businesses.</p>
                 <p class="price">₹1000</p>
-                <a href="#buy" class="btn">Buy Now</a>
             </div>
             <div class="service-box">
                 <h3>Accounting Services</h3>
+                <img src="accounting.jpg" alt="Accounting Services" width="100%">
                 <p>Professional bookkeeping and accounting solutions.</p>
                 <p class="price">₹5000</p>
-                <a href="#buy" class="btn">Buy Now</a>
             </div>
         </div>
+    </div>
+    <div class="container" id="buy">
+        <h2>Buy Our Services</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="income_tax">Individual Income Tax Return - ₹1000</option>
+                <option value="gst">GST Return Filing - ₹1000</option>
+                <option value="accounting">Accounting Services - ₹5000</option>
+            </select>
+            <button type="submit" class="btn">Proceed to Buy</button>
+        </form>
     </div>
     <div class="container" id="about">
         <h2>About Us</h2>
